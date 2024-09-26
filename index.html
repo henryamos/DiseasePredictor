@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction App</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="landing-content">
+            <h1>Disease Prediction System</h1>
+            <p>Predict potential diseases early based on your symptoms.</p>
+            <button onclick="scrollToForm()">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-section">
+        <h2>Enter Your Symptoms</h2>
+        <form id="predictionForm">
+            <input type="text" id="symptoms" placeholder="Enter symptoms, e.g., itching, skin rash" required>
+            <button type="submit">Predict Disease</button>
+        </form>
+
+        <!-- Loader -->
+        <div id="loader" style="display:none;">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Result Display -->
+        <div id="result-section">
+            <div id="result-display"></div>
+        </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

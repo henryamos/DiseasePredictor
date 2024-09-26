@@ -1,0 +1,164 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f8fa;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Landing Section */
+#landing {
+    height: 100vh;
+    /* background: linear-gradient(45deg, #38ef7d, #11998e); */
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),  url('../img/infection-human-body.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.landing-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.landing-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.landing-content button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: rgb(14, 14, 177);
+    background-color: rgb(249, 249, 249);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.landing-content button:hover {
+    background-color: #f2f2f2;
+}
+
+/* Form Section */
+#form-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#form-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #11998e;
+}
+
+#predictionForm input {
+    padding: 15px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#predictionForm button {
+    padding: 15px;
+    background-color: rgb(14, 14, 177);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#predictionForm button:hover {
+    background-color: #11998e;
+}
+
+/* Loader */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #38ef7d;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Result Section */
+#result-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#result-display {
+    opacity: 0;
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(20px);
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#result-display.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Result Cards */
+.result-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 250px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.result-card h3 {
+    color: #38ef7d;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Icon */
+.result-card i {
+    font-size: 3rem;
+    color: #2d9cdb;
+    margin-bottom: 10px;
+}
