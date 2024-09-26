@@ -15,8 +15,8 @@ h1, h2, h3 {
 /* Landing Section */
 #landing {
     height: 100vh;
-    /* background: linear-gradient(45deg, #38ef7d, #11998e); */
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),  url('../img/infection-human-body.jpg');
+   
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),  url('../img/infection-human-body-min.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
